@@ -7,8 +7,12 @@ import "./cardDisplay.css";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
-class CardDisplay extends React.Component {
-  render() {
+const CardDisplay = () =>  {
+  const handleLogout = () => {
+		localStorage.removeItem("token");
+		window.location.reload();
+	};
+ 
     return (
       <div className="wrapper">
         <div className="title">
@@ -114,10 +118,13 @@ class CardDisplay extends React.Component {
             <Button variant="contained" size="large" color="success">
               Get Your Cards
             </Button>
+            <button  onClick={handleLogout}>
+					Logout
+				</button>
           </div>
         </div>
       </div>
     );
   }
-}
+
 export default CardDisplay;
