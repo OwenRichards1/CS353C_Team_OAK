@@ -51,7 +51,7 @@ class App extends Component{
     onSubmit(event){
         //stops the page from refreshing
         event.preventDefault();
-//gathers all the values that the user has entered when they click submit
+        //gathers all the values that the user has entered when they click submit
         const registered={
             fullName: this.state.fullName,
             username: this.state.username,
