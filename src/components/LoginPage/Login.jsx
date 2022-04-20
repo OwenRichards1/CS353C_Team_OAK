@@ -1,13 +1,13 @@
 
 //import "bootstrap/dist/css/bootstrap.min.css"
 import axios from 'axios';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 
 
-const Login = () =>{
-    const [data, setData] = useState({ email: "", password: "" });
+const Login = () => {
+	const [data, setData] = useState({ email: "", password: "" });
 	const [error, setError] = useState("");
 
 	const handleChange = ({ currentTarget: input }) => {
@@ -31,12 +31,12 @@ const Login = () =>{
 			}
 		}
 	};
-    
-    
 
-  
-        return(
-            <div >
+
+
+
+	return (
+		<div >
 			<div >
 				<div >
 					<form onSubmit={handleSubmit}>
@@ -48,7 +48,7 @@ const Login = () =>{
 							onChange={handleChange}
 							value={data.email}
 							required
-							
+
 						/>
 						<input
 							type="password"
@@ -57,7 +57,7 @@ const Login = () =>{
 							onChange={handleChange}
 							value={data.password}
 							required
-							
+
 						/>
 						{error && <div>{error}</div>}
 						<button type="submit" >
@@ -75,8 +75,8 @@ const Login = () =>{
 				</div>
 			</div>
 		</div>
-        );
-    }
+	);
+}
 
 
 export default Login;
