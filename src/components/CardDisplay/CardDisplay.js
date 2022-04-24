@@ -251,8 +251,8 @@ const CardDisplay = () => {
               <input
                 class="inputButton"
                 type="text"
-                id="randomProtein"
-                name="randomProtein"
+                id="randomMod"
+                name="randomMod"
                 readonly="readonly"
               />
 
@@ -297,8 +297,8 @@ const CardDisplay = () => {
               <input
                 class="inputButton"
                 type="text"
-                id="randomProtein"
-                name="randomProtein"
+                id="randomWild"
+                name="randomWild"
                 readonly="readonly"
               />
 
