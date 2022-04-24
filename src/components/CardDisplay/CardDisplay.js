@@ -10,12 +10,12 @@ import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
-import RandomCardGenerator from "../RandomCardGenerator/CardGenerator.js";
+import RandomCardGenerator from "../randomCardGenerator/cardGenerator.js";
 import {
   ProteinPacks,
   CarbPacks,
   VegPacks,
-} from "../RandomCardGenerator/CardGenerator.js";
+} from "../randomCardGenerator/cardGenerator.js";
 
 const CardDisplay = () => {
   const handleLogout = () => {
